@@ -57,6 +57,15 @@ namespace WpfAppKosci3P
             }
         }
 
+        private int sumaLiczb()
+        {
+            int s = 0;
+            foreach(Kosc k in Kosci)
+            {
+                s = s + k.Wartosc;
+            }
+            return s;
+        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
