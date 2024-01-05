@@ -51,5 +51,10 @@ namespace WpfAppKosci3P
             k4.Source = KosciImages[wylosowane[3]];
             k5.Source = KosciImages[wylosowane[4]];
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
