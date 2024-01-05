@@ -61,9 +61,19 @@ namespace WpfAppKosci3P
         {
             Button button = sender as Button;
             Image image = button.Content as Image;
+            
             int ktory = Images.IndexOf(image);
-            Kosci[ktory].zablokuj();
-            image.Opacity = 0.3;
+            if (Kosci[ktory].CzyZablokowana == true)
+            {
+                Kosci[ktory].CzyZablokowana = false;
+                image.Opacity = 1;
+            }
+            else
+            {
+                Kosci[ktory].zablokuj();
+                image.Opacity = 0.3;
+            }
+            
 
         }
     }
